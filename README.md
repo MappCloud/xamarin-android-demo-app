@@ -1,4 +1,4 @@
-# Xamarin-adnroid-plugin
+# Xamarin-android-plugin
 
 The Mapp Mobile SDK is available for Mapp Engage mobile integrated customers.
 The SDKs enable you to integrate mobile push and in-app messaging into your campaign orchestration.
