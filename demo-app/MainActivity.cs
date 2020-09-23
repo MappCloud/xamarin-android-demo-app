@@ -4,20 +4,27 @@ using Android.OS;
 
 using Appoxee;
 using System;
-using Java.Lang;
 using Android.Util;
 using Java.Util;
 using Android.Content;
-
+using AndroidX.Core.App;
+using AndroidX.Core.Content;
+using Android;
+using Android.Content.PM;
 
 namespace demo_app
 {
+
+    
+
     [Activity(Label = "@string/app_name", Name = "com.mappp.MappAndroidSDKTest.MainActivity", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : Activity, EngageApoxee.IOnInitCompletedListener
     {
         private Switch pushEnable;
         private EngageApoxee appoxeeInstance;
         private Date DATE_FIELD = Calendar.Instance.Time;
+        const int MY_PERMISSIONS_ACCESS_FINE_LOCATION = 1 << 3;
+        const int MY_PERMISSIONS_ACCESS_FINE_AND_BACKGROUND_LOCATION = 1 << 4;
 
         public void OnInitCompleted(bool p0, Java.Lang.Exception p1)
         {
@@ -92,6 +99,11 @@ namespace demo_app
 
             Button inAppMessageBtn = FindViewById<Button>(Resource.Id.in_app_message);
             inAppMessageBtn.Click += openInApp;
+
+            Button geoButton = FindViewById<Button>(Resource.Id.geo_start);
+            inAppMessageBtn.Click += startGeo;
+
+            
         }
 
         private void deviceInfo(object sender, EventArgs e)
@@ -150,12 +162,12 @@ namespace demo_app
             {
                 int v = Convert.ToInt32(Convert.ToDecimal(numericValue.Text));
 
-                Integer intObj = new Integer(v);
-                Number numObj = (Number)intObj;
+                Java.Lang.Integer intObj = new Java.Lang.Integer(v);
+                Java.Lang.Number numObj = (Java.Lang.Number)intObj;
                 appoxeeInstance.SetAttribute(numericKey.Text, numObj);
             }
         }
-
+        
         private void removeDeviceTag(object sender, EventArgs e)
         {
             EditText removeTagValue = FindViewById<EditText>(Resource.Id.remove_tag_text);
@@ -206,6 +218,40 @@ namespace demo_app
         {
             appoxeeInstance.SetPushEnabled(pushEnable.Checked);
         }
-      
+
+        private void startGeo(object sender, EventArgs e)
+        {
+
+            const string permission = Manifest.Permission.AccessFineLocation;
+          
+
+                if (ContextCompat.CheckSelfPermission(this, permission) == Permission.Granted)
+                {
+                    appoxeeInstance.StartGeoFencing();
+                }
+                else
+                {
+                var requiredPermissions = new String[] { Manifest.Permission.AccessFineLocation };
+                ActivityCompat.RequestPermissions(this, requiredPermissions, MY_PERMISSIONS_ACCESS_FINE_LOCATION);           
+              
+            }
+           
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+
+            if (requestCode == MY_PERMISSIONS_ACCESS_FINE_LOCATION)
+            {
+                if ((grantResults.Length >= 1) && (grantResults[0] == Permission.Granted))
+                {
+                    appoxeeInstance.StartGeoFencing();
+                }
+            }
+        }
     }
 }
