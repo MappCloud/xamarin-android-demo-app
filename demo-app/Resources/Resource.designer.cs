@@ -90,6 +90,39 @@ namespace demo_app
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::demo_app.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::demo_app.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::demo_app.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.accessibility_action_clickable_span = global::demo_app.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_0 = global::demo_app.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_1 = global::demo_app.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_10 = global::demo_app.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_11 = global::demo_app.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_12 = global::demo_app.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_13 = global::demo_app.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_14 = global::demo_app.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_15 = global::demo_app.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_16 = global::demo_app.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_17 = global::demo_app.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_18 = global::demo_app.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_19 = global::demo_app.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_2 = global::demo_app.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_20 = global::demo_app.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_21 = global::demo_app.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_22 = global::demo_app.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_23 = global::demo_app.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_24 = global::demo_app.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_25 = global::demo_app.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_26 = global::demo_app.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_27 = global::demo_app.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_28 = global::demo_app.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_29 = global::demo_app.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_3 = global::demo_app.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_30 = global::demo_app.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_31 = global::demo_app.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_4 = global::demo_app.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_5 = global::demo_app.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_6 = global::demo_app.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_7 = global::demo_app.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_8 = global::demo_app.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Essentials.Resource.Id.accessibility_custom_action_9 = global::demo_app.Resource.Id.accessibility_custom_action_9;
 			global::Xamarin.Essentials.Resource.Id.actions = global::demo_app.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::demo_app.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::demo_app.Resource.Id.action_divider;
@@ -110,6 +143,7 @@ namespace demo_app
 			global::Xamarin.Essentials.Resource.Id.chronometer = global::demo_app.Resource.Id.chronometer;
 			global::Xamarin.Essentials.Resource.Id.clip_horizontal = global::demo_app.Resource.Id.clip_horizontal;
 			global::Xamarin.Essentials.Resource.Id.clip_vertical = global::demo_app.Resource.Id.clip_vertical;
+			global::Xamarin.Essentials.Resource.Id.dialog_button = global::demo_app.Resource.Id.dialog_button;
 			global::Xamarin.Essentials.Resource.Id.end = global::demo_app.Resource.Id.end;
 			global::Xamarin.Essentials.Resource.Id.fill = global::demo_app.Resource.Id.fill;
 			global::Xamarin.Essentials.Resource.Id.fill_horizontal = global::demo_app.Resource.Id.fill_horizontal;
@@ -131,6 +165,11 @@ namespace demo_app
 			global::Xamarin.Essentials.Resource.Id.right_icon = global::demo_app.Resource.Id.right_icon;
 			global::Xamarin.Essentials.Resource.Id.right_side = global::demo_app.Resource.Id.right_side;
 			global::Xamarin.Essentials.Resource.Id.start = global::demo_app.Resource.Id.start;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_actions = global::demo_app.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_clickable_spans = global::demo_app.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_heading = global::demo_app.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Essentials.Resource.Id.tag_accessibility_pane_title = global::demo_app.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Essentials.Resource.Id.tag_screen_reader_focusable = global::demo_app.Resource.Id.tag_screen_reader_focusable;
 			global::Xamarin.Essentials.Resource.Id.tag_transition_group = global::demo_app.Resource.Id.tag_transition_group;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_event_manager = global::demo_app.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Essentials.Resource.Id.tag_unhandled_key_listeners = global::demo_app.Resource.Id.tag_unhandled_key_listeners;
@@ -142,6 +181,7 @@ namespace demo_app
 			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::demo_app.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::demo_app.Resource.Layout.browser_actions_context_menu_page;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::demo_app.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Essentials.Resource.Layout.custom_dialog = global::demo_app.Resource.Layout.custom_dialog;
 			global::Xamarin.Essentials.Resource.Layout.notification_action = global::demo_app.Resource.Layout.notification_action;
 			global::Xamarin.Essentials.Resource.Layout.notification_action_tombstone = global::demo_app.Resource.Layout.notification_action_tombstone;
 			global::Xamarin.Essentials.Resource.Layout.notification_template_custom_big = global::demo_app.Resource.Layout.notification_template_custom_big;
@@ -4933,61 +4973,73 @@ namespace demo_app
 			public const int copy_toast_msg = 2131623988;
 			
 			// aapt resource value: 0x7F0E0035
-			public const int fab_transformation_scrim_behavior = 2131623989;
+			public const int default_web_client_id = 2131623989;
 			
 			// aapt resource value: 0x7F0E0036
-			public const int fab_transformation_sheet_behavior = 2131623990;
+			public const int fab_transformation_scrim_behavior = 2131623990;
 			
 			// aapt resource value: 0x7F0E0037
-			public const int fallback_menu_item_copy_link = 2131623991;
+			public const int fab_transformation_sheet_behavior = 2131623991;
 			
 			// aapt resource value: 0x7F0E0038
-			public const int fallback_menu_item_open_in_browser = 2131623992;
+			public const int fallback_menu_item_copy_link = 2131623992;
 			
 			// aapt resource value: 0x7F0E0039
-			public const int fallback_menu_item_share_link = 2131623993;
+			public const int fallback_menu_item_open_in_browser = 2131623993;
 			
 			// aapt resource value: 0x7F0E003A
-			public const int fcm_fallback_notification_channel_label = 2131623994;
+			public const int fallback_menu_item_share_link = 2131623994;
 			
 			// aapt resource value: 0x7F0E003B
-			public const int firebase_database_url = 2131623995;
+			public const int fcm_fallback_notification_channel_label = 2131623995;
 			
 			// aapt resource value: 0x7F0E003C
-			public const int gcm_defaultSenderId = 2131623996;
+			public const int firebase_database_url = 2131623996;
 			
 			// aapt resource value: 0x7F0E003D
-			public const int google_storage_bucket = 2131623997;
+			public const int gcm_defaultSenderId = 2131623997;
 			
 			// aapt resource value: 0x7F0E003E
-			public const int hide_bottom_view_on_scroll_behavior = 2131623998;
+			public const int google_api_key = 2131623998;
 			
 			// aapt resource value: 0x7F0E003F
-			public const int mtrl_chip_close_icon_content_description = 2131623999;
+			public const int google_app_id = 2131623999;
 			
 			// aapt resource value: 0x7F0E0040
-			public const int password_toggle_content_description = 2131624000;
+			public const int google_crash_reporting_api_key = 2131624000;
 			
 			// aapt resource value: 0x7F0E0041
-			public const int path_password_eye = 2131624001;
+			public const int google_storage_bucket = 2131624001;
 			
 			// aapt resource value: 0x7F0E0042
-			public const int path_password_eye_mask_strike_through = 2131624002;
+			public const int hide_bottom_view_on_scroll_behavior = 2131624002;
 			
 			// aapt resource value: 0x7F0E0043
-			public const int path_password_eye_mask_visible = 2131624003;
+			public const int mtrl_chip_close_icon_content_description = 2131624003;
 			
 			// aapt resource value: 0x7F0E0044
-			public const int path_password_strike_through = 2131624004;
+			public const int password_toggle_content_description = 2131624004;
 			
 			// aapt resource value: 0x7F0E0045
-			public const int project_id = 2131624005;
+			public const int path_password_eye = 2131624005;
 			
 			// aapt resource value: 0x7F0E0046
-			public const int search_menu_title = 2131624006;
+			public const int path_password_eye_mask_strike_through = 2131624006;
 			
 			// aapt resource value: 0x7F0E0047
-			public const int status_bar_notification_info_overflow = 2131624007;
+			public const int path_password_eye_mask_visible = 2131624007;
+			
+			// aapt resource value: 0x7F0E0048
+			public const int path_password_strike_through = 2131624008;
+			
+			// aapt resource value: 0x7F0E0049
+			public const int project_id = 2131624009;
+			
+			// aapt resource value: 0x7F0E004A
+			public const int search_menu_title = 2131624010;
+			
+			// aapt resource value: 0x7F0E004B
+			public const int status_bar_notification_info_overflow = 2131624011;
 			
 			static String()
 			{

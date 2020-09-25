@@ -24,11 +24,11 @@ namespace demo_app
         {
             base.OnCreate();
             AppoxeeOptions opt = new AppoxeeOptions();
-            opt.SdkKey = "SDK_KEY";
-            opt.GoogleProjectId = "GOOGLE_PROJECT_ID";
-            opt.CepURL = "CEP_URL";
-            opt.AppID = "APP_ID";
-            opt.TenantID = "TENANT_ID";
+            opt.SdkKey = "174bfe22eaf5f6.12942055";
+            opt.GoogleProjectId = "1028993954364";
+            opt.CepURL = "https://jamie-test.shortest-route.com";
+            opt.AppID = "1585031493383";
+            opt.TenantID = "33";
             opt.NotificationMode = NotificationModes.BackgroundAndForeground;
 
             opt.Server = AppoxeeOptions.ServerForUsing.Test;

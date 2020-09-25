@@ -101,7 +101,7 @@ namespace demo_app
             inAppMessageBtn.Click += openInApp;
 
             Button geoButton = FindViewById<Button>(Resource.Id.geo_start);
-            inAppMessageBtn.Click += startGeo;
+            geoButton.Click += startGeo;
 
             
         }
@@ -221,21 +221,30 @@ namespace demo_app
 
         private void startGeo(object sender, EventArgs e)
         {
-
             const string permission = Manifest.Permission.AccessFineLocation;
-          
-
+            if(Build.VERSION.SdkInt >= BuildVersionCodes.Q)
                 if (ContextCompat.CheckSelfPermission(this, permission) == Permission.Granted)
                 {
-                    appoxeeInstance.StartGeoFencing();
+                    if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.AccessBackgroundLocation) == Permission.Granted)
+                        appoxeeInstance.StartGeoFencing();
+                    else {
+                        var requiredPermissions = new String[] { Manifest.Permission.AccessFineLocation };
+                        ActivityCompat.RequestPermissions(this, requiredPermissions, MY_PERMISSIONS_ACCESS_FINE_LOCATION);
+                    }
+
                 }
                 else
                 {
+                    var requiredPermissions = new String[] { Manifest.Permission.AccessFineLocation, Manifest.Permission.AccessBackgroundLocation };
+                    ActivityCompat.RequestPermissions(this, requiredPermissions, MY_PERMISSIONS_ACCESS_FINE_AND_BACKGROUND_LOCATION);
+
+                }
+            else
+            {
                 var requiredPermissions = new String[] { Manifest.Permission.AccessFineLocation };
-                ActivityCompat.RequestPermissions(this, requiredPermissions, MY_PERMISSIONS_ACCESS_FINE_LOCATION);           
-              
+                ActivityCompat.RequestPermissions(this, requiredPermissions, MY_PERMISSIONS_ACCESS_FINE_LOCATION);
             }
-           
+
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
@@ -245,13 +254,14 @@ namespace demo_app
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
 
-            if (requestCode == MY_PERMISSIONS_ACCESS_FINE_LOCATION)
+            if (requestCode == MY_PERMISSIONS_ACCESS_FINE_LOCATION || requestCode== MY_PERMISSIONS_ACCESS_FINE_AND_BACKGROUND_LOCATION)
             {
                 if ((grantResults.Length >= 1) && (grantResults[0] == Permission.Granted))
                 {
                     appoxeeInstance.StartGeoFencing();
                 }
             }
+
         }
     }
 }
