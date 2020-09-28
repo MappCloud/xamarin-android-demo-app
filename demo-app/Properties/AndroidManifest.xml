@@ -22,9 +22,9 @@
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 				<action android:name="com.mapp.RICH_PUSH" />
-			    <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="${applicationId}"/>
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<category android:name="${applicationId}" />
 			</intent-filter>
 		</activity>
 		<activity android:name="com.mappp.MappAndroidSDKTest.DeepLinkActivity">
@@ -32,7 +32,7 @@
 				<data android:scheme="apx" />
 				<data android:host="deeplink" />
 				<action android:name="com.appoxee.VIEW_DEEPLINK" />
-                 <category android:name="${applicationId}"/>
+				<category android:name="${applicationId}" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
 			</intent-filter>
